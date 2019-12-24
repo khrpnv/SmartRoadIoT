@@ -1,0 +1,6 @@
+framework module Pods_SmartRoadIoT {
+  umbrella header "Pods-SmartRoadIoT-umbrella.h"
+
+  export *
+  module * { export * }
+}

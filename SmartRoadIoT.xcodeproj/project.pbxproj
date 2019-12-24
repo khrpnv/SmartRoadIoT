@@ -3,27 +3,71 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA2A458923B2144A00B1CFBE /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2A458823B2144A00B1CFBE /* ServiceTableViewCell.swift */; };
+		EA2A458B23B21B4E00B1CFBE /* SensorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2A458A23B21B4E00B1CFBE /* SensorsViewController.swift */; };
+		EA2A458D23B21E5B00B1CFBE /* SensorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2A458C23B21E5B00B1CFBE /* SensorTableViewCell.swift */; };
+		EA2A459023B22C4100B1CFBE /* SensorsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2A458F23B22C4100B1CFBE /* SensorsManager.swift */; };
+		EA2A459223B22C4F00B1CFBE /* SensorsManagerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2A459123B22C4F00B1CFBE /* SensorsManagerOutput.swift */; };
+		EA369C3C23B237400037C857 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA369C3B23B237400037C857 /* MenuViewController.swift */; };
+		EA369C3E23B23CBE0037C857 /* RoadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA369C3D23B23CBE0037C857 /* RoadsViewController.swift */; };
+		EA369C4123B240910037C857 /* RoadsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA369C4023B240910037C857 /* RoadsManager.swift */; };
+		EA369C4423B240A00037C857 /* RoadsManagerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA369C4323B240A00037C857 /* RoadsManagerOutput.swift */; };
+		EA369C4623B240BD0037C857 /* Road.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA369C4523B240BD0037C857 /* Road.swift */; };
+		EA369C4A23B247860037C857 /* RoadSensorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA369C4923B247860037C857 /* RoadSensorsViewController.swift */; };
+		EA369C4C23B247B90037C857 /* RoadSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA369C4B23B247B90037C857 /* RoadSensor.swift */; };
+		EA369C4F23B265850037C857 /* RoadSensorsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA369C4E23B265850037C857 /* RoadSensorsManager.swift */; };
+		EA369C5123B265900037C857 /* RoadSensorsManagerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA369C5023B265900037C857 /* RoadSensorsManagerOutput.swift */; };
 		EA3E9FFB23B208C500B5B433 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3E9FFA23B208C500B5B433 /* AppDelegate.swift */; };
 		EA3E9FFD23B208C500B5B433 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3E9FFC23B208C500B5B433 /* SceneDelegate.swift */; };
-		EA3E9FFF23B208C500B5B433 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3E9FFE23B208C500B5B433 /* ViewController.swift */; };
 		EA3EA00223B208C500B5B433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3EA00023B208C500B5B433 /* Main.storyboard */; };
 		EA3EA00423B208C600B5B433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA3EA00323B208C600B5B433 /* Assets.xcassets */; };
 		EA3EA00723B208C600B5B433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3EA00523B208C600B5B433 /* LaunchScreen.storyboard */; };
+		EA3EA01223B209FA00B5B433 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EA01123B209FA00B5B433 /* Sensor.swift */; };
+		EA3EA01423B20BBF00B5B433 /* ServiceStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EA01323B20BBF00B5B433 /* ServiceStation.swift */; };
+		EA3EA01723B20BEE00B5B433 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EA01623B20BEE00B5B433 /* ServiceManager.swift */; };
+		EA3EA01923B20C2D00B5B433 /* ServiceManagerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EA01823B20C2D00B5B433 /* ServiceManagerOutput.swift */; };
+		EA6CF43C23B20D8A00536FC8 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6CF43B23B20D8A00536FC8 /* Const.swift */; };
+		EA6CF43E23B20EBC00536FC8 /* ServiceStationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6CF43D23B20EBC00536FC8 /* ServiceStationsViewController.swift */; };
+		EA6CF44023B20F3A00536FC8 /* ServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6CF43F23B20F3A00536FC8 /* ServiceType.swift */; };
+		F3E54D788DAC4E827D4C9008 /* Pods_SmartRoadIoT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D050B025B86AF412F2EDFC /* Pods_SmartRoadIoT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21D050B025B86AF412F2EDFC /* Pods_SmartRoadIoT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartRoadIoT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D7DB822AD42A9B35296FA8 /* Pods-SmartRoadIoT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartRoadIoT.release.xcconfig"; path = "Target Support Files/Pods-SmartRoadIoT/Pods-SmartRoadIoT.release.xcconfig"; sourceTree = "<group>"; };
+		9B5C6DB50D96C5B1E8EABBDF /* Pods-SmartRoadIoT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartRoadIoT.debug.xcconfig"; path = "Target Support Files/Pods-SmartRoadIoT/Pods-SmartRoadIoT.debug.xcconfig"; sourceTree = "<group>"; };
+		EA2A458823B2144A00B1CFBE /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
+		EA2A458A23B21B4E00B1CFBE /* SensorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsViewController.swift; sourceTree = "<group>"; };
+		EA2A458C23B21E5B00B1CFBE /* SensorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorTableViewCell.swift; sourceTree = "<group>"; };
+		EA2A458F23B22C4100B1CFBE /* SensorsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsManager.swift; sourceTree = "<group>"; };
+		EA2A459123B22C4F00B1CFBE /* SensorsManagerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsManagerOutput.swift; sourceTree = "<group>"; };
+		EA369C3B23B237400037C857 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		EA369C3D23B23CBE0037C857 /* RoadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadsViewController.swift; sourceTree = "<group>"; };
+		EA369C4023B240910037C857 /* RoadsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadsManager.swift; sourceTree = "<group>"; };
+		EA369C4323B240A00037C857 /* RoadsManagerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadsManagerOutput.swift; sourceTree = "<group>"; };
+		EA369C4523B240BD0037C857 /* Road.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Road.swift; sourceTree = "<group>"; };
+		EA369C4923B247860037C857 /* RoadSensorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadSensorsViewController.swift; sourceTree = "<group>"; };
+		EA369C4B23B247B90037C857 /* RoadSensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadSensor.swift; sourceTree = "<group>"; };
+		EA369C4E23B265850037C857 /* RoadSensorsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadSensorsManager.swift; sourceTree = "<group>"; };
+		EA369C5023B265900037C857 /* RoadSensorsManagerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadSensorsManagerOutput.swift; sourceTree = "<group>"; };
 		EA3E9FF723B208C500B5B433 /* SmartRoadIoT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartRoadIoT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3E9FFA23B208C500B5B433 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA3E9FFC23B208C500B5B433 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA3E9FFE23B208C500B5B433 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA3EA00123B208C500B5B433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA3EA00323B208C600B5B433 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA3EA00623B208C600B5B433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA3EA00823B208C600B5B433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA3EA01123B209FA00B5B433 /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		EA3EA01323B20BBF00B5B433 /* ServiceStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceStation.swift; sourceTree = "<group>"; };
+		EA3EA01623B20BEE00B5B433 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		EA3EA01823B20C2D00B5B433 /* ServiceManagerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManagerOutput.swift; sourceTree = "<group>"; };
+		EA6CF43B23B20D8A00536FC8 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		EA6CF43D23B20EBC00536FC8 /* ServiceStationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceStationsViewController.swift; sourceTree = "<group>"; };
+		EA6CF43F23B20F3A00536FC8 /* ServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +75,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E54D788DAC4E827D4C9008 /* Pods_SmartRoadIoT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C7E3C8BA1EDDCF8E0D71850 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B5C6DB50D96C5B1E8EABBDF /* Pods-SmartRoadIoT.debug.xcconfig */,
+				28D7DB822AD42A9B35296FA8 /* Pods-SmartRoadIoT.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		517CC72AC23E1EC66DE52453 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21D050B025B86AF412F2EDFC /* Pods_SmartRoadIoT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA2A458723B213D100B1CFBE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA2A458823B2144A00B1CFBE /* ServiceTableViewCell.swift */,
+				EA2A458C23B21E5B00B1CFBE /* SensorTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA2A458E23B22C2200B1CFBE /* SensorsManager */ = {
+			isa = PBXGroup;
+			children = (
+				EA2A458F23B22C4100B1CFBE /* SensorsManager.swift */,
+				EA2A459123B22C4F00B1CFBE /* SensorsManagerOutput.swift */,
+			);
+			path = SensorsManager;
+			sourceTree = "<group>";
+		};
+		EA369C3F23B240840037C857 /* RoadsManager */ = {
+			isa = PBXGroup;
+			children = (
+				EA369C4023B240910037C857 /* RoadsManager.swift */,
+				EA369C4323B240A00037C857 /* RoadsManagerOutput.swift */,
+			);
+			path = RoadsManager;
+			sourceTree = "<group>";
+		};
+		EA369C4D23B265760037C857 /* RoadSensorsManager */ = {
+			isa = PBXGroup;
+			children = (
+				EA369C4E23B265850037C857 /* RoadSensorsManager.swift */,
+				EA369C5023B265900037C857 /* RoadSensorsManagerOutput.swift */,
+			);
+			path = RoadSensorsManager;
+			sourceTree = "<group>";
+		};
 		EA3E9FEE23B208C500B5B433 = {
 			isa = PBXGroup;
 			children = (
 				EA3E9FF923B208C500B5B433 /* SmartRoadIoT */,
 				EA3E9FF823B208C500B5B433 /* Products */,
+				2C7E3C8BA1EDDCF8E0D71850 /* Pods */,
+				517CC72AC23E1EC66DE52453 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +156,79 @@
 		EA3E9FF923B208C500B5B433 /* SmartRoadIoT */ = {
 			isa = PBXGroup;
 			children = (
+				EA3EA00F23B209A500B5B433 /* Model */,
+				EA2A458723B213D100B1CFBE /* View */,
+				EA3EA01023B209AF00B5B433 /* Controller */,
+				EA3EA01523B20BD000B5B433 /* Networking */,
+				EA6CF43A23B20D7E00536FC8 /* Helpers */,
+				EA3EA00E23B2097B00B5B433 /* Supporting files */,
+			);
+			path = SmartRoadIoT;
+			sourceTree = "<group>";
+		};
+		EA3EA00E23B2097B00B5B433 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
 				EA3E9FFA23B208C500B5B433 /* AppDelegate.swift */,
 				EA3E9FFC23B208C500B5B433 /* SceneDelegate.swift */,
-				EA3E9FFE23B208C500B5B433 /* ViewController.swift */,
 				EA3EA00023B208C500B5B433 /* Main.storyboard */,
 				EA3EA00323B208C600B5B433 /* Assets.xcassets */,
 				EA3EA00523B208C600B5B433 /* LaunchScreen.storyboard */,
 				EA3EA00823B208C600B5B433 /* Info.plist */,
 			);
-			path = SmartRoadIoT;
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		EA3EA00F23B209A500B5B433 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA3EA01123B209FA00B5B433 /* Sensor.swift */,
+				EA3EA01323B20BBF00B5B433 /* ServiceStation.swift */,
+				EA6CF43F23B20F3A00536FC8 /* ServiceType.swift */,
+				EA369C4523B240BD0037C857 /* Road.swift */,
+				EA369C4B23B247B90037C857 /* RoadSensor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA3EA01023B209AF00B5B433 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA6CF43D23B20EBC00536FC8 /* ServiceStationsViewController.swift */,
+				EA2A458A23B21B4E00B1CFBE /* SensorsViewController.swift */,
+				EA369C3B23B237400037C857 /* MenuViewController.swift */,
+				EA369C3D23B23CBE0037C857 /* RoadsViewController.swift */,
+				EA369C4923B247860037C857 /* RoadSensorsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA3EA01523B20BD000B5B433 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EA369C4D23B265760037C857 /* RoadSensorsManager */,
+				EA369C3F23B240840037C857 /* RoadsManager */,
+				EA2A458E23B22C2200B1CFBE /* SensorsManager */,
+				EA3EA01A23B20C9200B5B433 /* ServiceStationManager */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		EA3EA01A23B20C9200B5B433 /* ServiceStationManager */ = {
+			isa = PBXGroup;
+			children = (
+				EA3EA01623B20BEE00B5B433 /* ServiceManager.swift */,
+				EA3EA01823B20C2D00B5B433 /* ServiceManagerOutput.swift */,
+			);
+			path = ServiceStationManager;
+			sourceTree = "<group>";
+		};
+		EA6CF43A23B20D7E00536FC8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EA6CF43B23B20D8A00536FC8 /* Const.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA3EA00B23B208C600B5B433 /* Build configuration list for PBXNativeTarget "SmartRoadIoT" */;
 			buildPhases = (
+				8B5998018D4C53DBC8B25CBA /* [CP] Check Pods Manifest.lock */,
 				EA3E9FF323B208C500B5B433 /* Sources */,
 				EA3E9FF423B208C500B5B433 /* Frameworks */,
 				EA3E9FF523B208C500B5B433 /* Resources */,
+				25EECDB17F2F14FDE1DC8C08 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +299,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25EECDB17F2F14FDE1DC8C08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartRoadIoT/Pods-SmartRoadIoT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartRoadIoT/Pods-SmartRoadIoT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartRoadIoT/Pods-SmartRoadIoT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B5998018D4C53DBC8B25CBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartRoadIoT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA3E9FF323B208C500B5B433 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA3E9FFF23B208C500B5B433 /* ViewController.swift in Sources */,
+				EA369C4623B240BD0037C857 /* Road.swift in Sources */,
+				EA2A458B23B21B4E00B1CFBE /* SensorsViewController.swift in Sources */,
+				EA369C3C23B237400037C857 /* MenuViewController.swift in Sources */,
+				EA369C4123B240910037C857 /* RoadsManager.swift in Sources */,
+				EA369C4A23B247860037C857 /* RoadSensorsViewController.swift in Sources */,
+				EA2A458D23B21E5B00B1CFBE /* SensorTableViewCell.swift in Sources */,
+				EA2A459023B22C4100B1CFBE /* SensorsManager.swift in Sources */,
+				EA369C4F23B265850037C857 /* RoadSensorsManager.swift in Sources */,
+				EA369C5123B265900037C857 /* RoadSensorsManagerOutput.swift in Sources */,
 				EA3E9FFB23B208C500B5B433 /* AppDelegate.swift in Sources */,
+				EA3EA01223B209FA00B5B433 /* Sensor.swift in Sources */,
+				EA3EA01923B20C2D00B5B433 /* ServiceManagerOutput.swift in Sources */,
+				EA2A459223B22C4F00B1CFBE /* SensorsManagerOutput.swift in Sources */,
+				EA6CF43E23B20EBC00536FC8 /* ServiceStationsViewController.swift in Sources */,
+				EA3EA01423B20BBF00B5B433 /* ServiceStation.swift in Sources */,
+				EA3EA01723B20BEE00B5B433 /* ServiceManager.swift in Sources */,
 				EA3E9FFD23B208C500B5B433 /* SceneDelegate.swift in Sources */,
+				EA369C3E23B23CBE0037C857 /* RoadsViewController.swift in Sources */,
+				EA369C4423B240A00037C857 /* RoadsManagerOutput.swift in Sources */,
+				EA2A458923B2144A00B1CFBE /* ServiceTableViewCell.swift in Sources */,
+				EA6CF43C23B20D8A00536FC8 /* Const.swift in Sources */,
+				EA6CF44023B20F3A00536FC8 /* ServiceType.swift in Sources */,
+				EA369C4C23B247B90037C857 /* RoadSensor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +510,7 @@
 		};
 		EA3EA00C23B208C600B5B433 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B5C6DB50D96C5B1E8EABBDF /* Pods-SmartRoadIoT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +529,7 @@
 		};
 		EA3EA00D23B208C600B5B433 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28D7DB822AD42A9B35296FA8 /* Pods-SmartRoadIoT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
