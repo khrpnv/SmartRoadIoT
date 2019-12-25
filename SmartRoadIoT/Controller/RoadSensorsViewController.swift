@@ -37,6 +37,7 @@ class RoadSensorsViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    setupProximityMonitoring()
     self.title = road?.address
     tableView.delegate = self
     tableView.dataSource = self
@@ -84,6 +85,7 @@ private extension RoadSensorsViewController {
     let roadsManager = RoadsManager(delegate: self)
     guard let id = road?.id else { return }
     roadsManager.getSensorsForRoad(id: id)
+    hideLabels(isHidden: true)
   }
   
   func setupReset() {
@@ -155,6 +157,7 @@ extension RoadSensorsViewController {
     let state = UIDevice.current.proximityState
     guard let id = currentSensor?.id else { return }
     roadSensorsManager?.updateSensor(id: id, state: state)
+    getData()
   }
   
   @objc func resetSensor() {
